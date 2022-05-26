@@ -1,0 +1,265 @@
+.mainContainer {
+  background: $background-color;
+  padding: 0 $gutter-size;
+  margin: $title-height+$gutter-size $gutter-size $gutter-size 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.txFeeBox{
+  display: flex;
+  align-items: center;
+}
+
+.feeDescription{
+  width: 50%;
+  margin-left: $gutter-size;
+  margin-bottom: $gutter-size;
+  color: #78808D;
+}
+
+.content {
+  min-width: 400px;
+  width: 55%;
+}
+
+.container{
+  max-width: 970px;
+  width: 100%;
+}
+
+.submit {
+  text-align: right;
+}
+
+.submitTable {
+  border-spacing: 5px;
+
+  tr:first-child td {
+    padding-bottom: $gutter-size/2;
+  }
+
+  td input {
+    margin-right: 7px;
+  }
+
+  td {
+    padding: 0;
+    vertical-align: top;
+  }
+
+  label {
+    margin-bottom: 0;
+    color: $text-strong-color;
+  }
+
+  .submitDescription {
+    font-weight: normal;
+    color: $text-color;
+    line-height: 1.4;
+  }
+}
+
+.actionInfo {
+  margin-bottom: $gutter-size;
+}
+
+.btnGroup {
+  margin: 32px 0 36px;
+  button{
+    padding: 0 40px;
+    border-radius: 0 !important;
+    border: 1px solid #E1E3E6;
+    color: #78808D;
+    &:first-child {
+      border-radius: 8px 0 0 8px !important;
+    }
+    &:last-child {
+      border-radius: 0 8px 8px 0 !important;
+    }
+    &.active{
+      background: linear-gradient(180deg, #3177FF 0%, #004EE4 100%);
+      color: #fff !important;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #444B57;
+}
+
+.estimateGas {
+  margin-left: 10px;
+  font-size: 8px;
+  color: #747c89;
+}
+
+.mainBox {
+  margin-bottom: $gutter-size;
+}
+
+.tutorialItem{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 60%;
+  min-width: 350px;
+  margin-bottom: 20px;
+}
+
+.item{
+  display: flex;
+  position: relative;
+
+  :global {
+    .form-group {
+      flex: 1;
+      &:not(:last-child) {
+        margin-right: $gutter-size;
+      }
+    }
+  }
+}
+
+.subjectField {
+  display: flex;
+  align-items: flex-start;
+
+  :global {
+    .form-group {
+      flex: 1;
+      margin-right: $gutter-size;
+    }
+  }
+
+  .deleteButton{
+    margin-top: 38px;
+  }
+}
+
+.balanceHint {
+  position: relative;
+  top: -30px;
+}
+
+.optionsBtnContianer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  height: 150px;
+  input {
+    margin: 0 5px;
+  }
+  & > label {
+    height: 40px;
+    overflow-y: hidden;
+  }
+  & > label > label {
+    line-height: 36px;
+  }
+  .form-group {
+    margin-bottom: 0 !important;
+  }
+}
+
+.optionsBtn {
+  margin: 5px 0;
+}
+
+.optionsLabel {
+  vertical-align: top;
+  width: 150px;
+}
+
+.receiverBtn{
+  position: absolute;
+  right: -29px;
+  margin-top: 32px;
+  width: 25px;
+  height: 25px;
+  font-size: 22px;
+  line-height: 20px;
+  padding: 1px 5px 0px 5px;
+}
+
+.borderBottom{
+  border-bottom: 1px solid $border-color;
+}
+
+.switch {
+  margin-top: 5px;
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+
+  /* Hide default HTML checkbox */
+  input {display:none;}
+
+  input:checked + .slider {
+    background-color: $highlight-default;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px $highlight-default;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.submitSwitch{
+  display: flex;
+  min-width: 370px;
+  align-items: center;
+}
+
+.label{
+  margin-right: $grid-gutter-width/4;
+  color: #444B57;
+}
+
+.submitSwitchSet{
+  display: flex;
+  margin-bottom: $grid-gutter-width;
+  align-items: center;
+  color: #78808D;
+}
+
+.center {
+  max-width: 970px;
+  width: 100%;
+}

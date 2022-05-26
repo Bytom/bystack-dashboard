@@ -1,0 +1,415 @@
+@font-face {
+  font-family: "Nitti";
+  src: url('fonts/nitti-normal.woff');
+}
+
+@font-face {
+  font-family: "Nitti Grotesk";
+  src: url('fonts/nittigrotesk-normal.woff');
+}
+
+@font-face {
+  font-family: "Nitti Grotesk";
+  font-weight: bold;
+  src: url('fonts/nittigrotesk-medium.woff');
+}
+
+@font-face
+{
+  font-family: 'dotsfont';
+  src: url('fonts/dotsfont/dotsfont.eot');
+  src: url('fonts/dotsfont/dotsfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/dotsfont/dotsfont.svg#dotsfontregular') format('svg'),
+  url('fonts/dotsfont/dotsfont.woff') format('woff'),
+  url('fonts/dotsfont/dotsfont.ttf') format('truetype');
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  min-height: 100%;
+  min-width: $minWidth;
+  color: $text-color;
+  font-size: 18px;
+}
+
+code {
+  font-size: 18px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+:focus, .focus {
+  outline: none !important;
+}
+
+.jumbotron p {
+  margin-bottom: 0;
+  color: $gray-light;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: $grid-gutter-width/2;
+}
+
+label{
+  font-weight: 500;
+}
+
+b, strong{
+  font-weight: 600;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+pre{
+ font-size: $font-size-nav;
+}
+
+.btn-primary,
+.btn-default,
+.btn-outline-primary {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: $border-radius-standard;
+}
+
+.btn-primary {
+  border-color: $highlight-default;
+  color: $text-inverse-color;
+  background-color: $highlight-default;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:hover,
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:focus, .btn-primary.focus
+.btn-primary:active.focus, .btn-primary.active:hover,
+.btn-primary.active:focus, .btn-primary.active.focus {
+  text-decoration: none;
+  color: $text-inverse-color;
+  background: $highlight-secondary;
+  border-color: $highlight-secondary;
+}
+
+.btn-outline-primary {
+  color: $highlight-default;
+  background-color: transparent;
+  background-image: none;
+  border-color: $highlight-default;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:active:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus,
+.btn-outline-primary:focus, .btn-outline-primary.focus
+.btn-outline-primary:active.focus, .btn-outline-primary.active:hover,
+.btn-outline-primary.active:focus, .btn-outline-primary.active.focus {
+  text-decoration: none;
+  color: $text-inverse-color;
+  background: $highlight-default;
+  border-color: $highlight-default;
+}
+
+.btn-default {
+  background-color: $background-color;
+  border-color: $border-strong-color;
+}
+.btn-default:active:hover,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active:focus,
+.btn-default:focus, .btn-default.focus
+.btn-default:active.focus, .btn-default.active:hover,
+.btn-default.active:focus, .btn-default.active.focus,
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+  color: $text-strong-color;
+  background-color: $background-content-color;
+  border-color: $border-strong-color;
+}
+
+a:hover,
+a:focus {
+  color: $highlight-secondary;
+  text-decoration: none;
+}
+
+.form-control {
+  height: 36px;
+  &:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(37, 123, 242, 0.6);
+  }
+}
+.help-block {
+  color: $text-light-color;
+}
+.jumbotron {
+  background: transparent;
+}
+.btn-lg {
+  height: 44px;
+  font-size: $font-size-btn-lg;
+}
+.label-primary {
+  color: $text-color;
+  background: $background-emphasis-color;
+  border: 1px solid transparentize($border-color, 0.5);
+}
+.close {
+  text-shadow: none;
+  font-size: $font-size-close;
+  font-weight: normal;
+}
+
+.text-danger{
+  color: $text-danger;
+  font-size: 14px;
+}
+
+div.react-console-prompt-box {
+  padding-top: 1em;
+  color: #444;
+}
+
+span.react-console-prompt-label {
+  font-weight: bold;
+}
+
+div.react-console-focus span.react-console-cursor {
+  background: #333;
+  color: #eee;
+}
+
+div.react-console-nofocus span.react-console-cursor {
+  background: none;
+  color: #444;
+  outline: 0.1em solid #333;
+  outline-offset: -0.1em;
+}
+
+div.react-console-focus span.react-console-cursor-idle {
+  animation: react-console-cursor-animation 1s infinite;
+}
+
+@keyframes react-console-cursor-animation {
+  0% {
+    background: #333;
+    color: #eee; }
+  50% {
+    background: #333;
+    color: #eee; }
+  51% {
+    background: none;
+    color: #444; }
+  100% {
+    background: none;
+    color: #444; } }
+
+div.react-console-message,
+span.react-console-prompt {
+  white-space: pre-wrap;      /* CSS3 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap;     /* Opera <7 */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  word-wrap: break-word;      /* IE */
+  padding: 0.1em;
+}
+
+div.react-console-message-Error{
+  color: $text-danger;
+}
+
+input[type=range] {
+  height: 34px;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+
+//Chrome
+input[type=range]::-webkit-slider-runnable-track {
+  height: 7px;
+  cursor: pointer;
+  animate: 0.2s;
+  height: 10px;
+  background: rgba(0, 78, 228, 0.08);
+  border-radius: 8px;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+  border: 2px solid #004EE4;
+  box-shadow: 0px 0px 8px rgba(89, 124, 250, 0.32);
+  background: #fff;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(0, 78, 228, 0.08);
+}
+
+//Firefox
+input[type=range]::-moz-range-track {
+  height: 7px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #e4e4e4;
+}
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 15px;
+  background: $highlight-default;
+  cursor: pointer;
+}
+
+//IE
+input[type=range]::-ms-track {
+  height: 7px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #e4e4e4;
+  border-radius: 2px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #e4e4e4;
+  border-radius: 2px;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  height: 18px;
+  width: 18px;
+  border-radius: 15px;
+  background: $highlight-default;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: $highlight-default;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #e4e4e4;
+}
+
+
+
+/** 2.0 **/
+.btn {
+  border-radius: 8px;
+  min-width: 100px;
+}
+.btn-large {
+  height: 48px;
+  font-size: 18px;
+  padding: 0 12px;
+  line-height: 48px;
+}
+.btn-primary {
+  background: linear-gradient(180deg, #3177ff 0%, #004ee4 100%);
+  &.btn-ghost {
+    color: #004EE4;
+  }
+  &[disabled] {
+    opacity: 0.4;
+  }
+  &:not(.btn-ghost) {
+    &:hover, &:active, &:focus {
+      background: linear-gradient(180deg, #3177ff 0%, #004ee4 100%) !important;
+      opacity: 0.8;
+    }
+  }
+  
+}
+.btn-default {
+  border: 1px solid #E1E3E6;
+  box-shadow: 0px 4px 2px -2px rgba(27, 46, 94, 0.02);
+  color: #444B57;
+}
+.btn-link {
+  color: inherit;
+  text-decoration: underline;
+}
+.btn-icon {
+  padding: 4px 10px;
+  margin: 0;
+  line-height: 1;
+  min-width: 20px;
+
+  &:active {
+    background: #eee;
+  }
+}
+.btn-ghost {
+  background: transparent;
+  border-color: currentColor;
+}
+
+.dropdown {
+  button {
+    height: 48px;
+    font-size: 18px;
+    color: #444B57;
+  }
+}
+.dropdown-menu {
+  font-size: 18px;
+}
+
+input[type="text"], .form-control {
+  height: 48px;
+  border-radius: 8px !important;
+  border: 1px solid #E1E3E6;
+  box-shadow: none;
+  font-size: 18px;
+
+  &:focus {
+    border: 1px solid #004EE4;
+    box-shadow: 0 0 0 4px rgb(0 78 228 / 20%);
+  }
+  &.disabled {
+    background: #F8F8F8;
+  }
+}

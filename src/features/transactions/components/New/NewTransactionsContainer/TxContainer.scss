@@ -1,0 +1,11 @@
+.main {
+  background: $background-color;
+  display: flex;
+  flex-direction: row;
+  padding: 0 $gutter-size;
+  margin-top: $title-height;
+}
+
+.content {
+  width: 55%;
+}

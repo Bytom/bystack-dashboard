@@ -1,0 +1,47 @@
+.main {
+  margin: 12px 0 0;
+  padding: 0 26px; 
+  color: #78808D;
+}
+
+.testnetError {
+  color: $brand-danger;
+}
+
+.testnetReset {
+  color: $brand-warning;
+}
+
+.blockHightlight {
+  color: $highlight-inverse-color;
+  font-size: 14px;
+}
+
+.progressBar{
+  margin-top: 6px;
+  margin-bottom: 15px;
+  height: 10px;
+  background: rgba(0, 78, 228, 0.08);
+  border-radius: 8px;
+
+  >div {
+    background: linear-gradient(180deg, #3177FF 0%, #004EE4 100%);
+    border-radius: 8px;
+  }
+}
+
+.status {
+  font-size: 12px;
+}
+
+.peerCount {
+  margin-top: 14px;
+  margin-bottom: 16px;
+
+  a {
+    padding: 0;
+    line-height: 20px;
+    height: unset;
+    font-size: 14px;
+  }
+}

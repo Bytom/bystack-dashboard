@@ -1,0 +1,12 @@
+.main {
+  background: $background-color;
+  display: flex;
+  flex-direction: row;
+  padding: 0 $gutter-size;
+  margin: $title-height+$gutter-size $gutter-size $gutter-size $gutter-size;
+}
+
+.content {
+  min-width: 400px;
+  width: 55%;
+}

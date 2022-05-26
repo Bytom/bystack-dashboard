@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  position: fixed;
+  top: 96px;
+  left: 280px;
+  z-index: 1000;
+  width: calc(100vw - 280px);
+}
+
+.alert {
+  padding: 15px;
+  border-bottom: 1px solid transparent;
+}
+
+.info {
+  background-color: $alert-info-bg;
+  border-color: $alert-info-border;
+  color: $alert-info-text;
+}
+
+.success {
+  background-color: $success-background;
+  border-color: $success-border;
+  color: $success;
+}
+
+.danger {
+  background-color: #FEF0F0;
+  color: #F43C3C;
+  // background-color: $highlight-danger-background;
+  // border-color: $highlight-danger-border;
+  // color: $highlight-danger;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+
+  p {
+    margin: 0;
+  }
+}

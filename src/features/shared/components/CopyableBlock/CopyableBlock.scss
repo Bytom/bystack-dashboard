@@ -1,0 +1,15 @@
+.main {
+  margin: $gutter-size auto;
+  border-radius: $border-radius-standard;
+  background-color: $background-content-color;
+}
+
+.pre {
+  padding: 0px !important;
+  background-color: transparent !important;
+  margin-bottom: 10px;
+}
+
+.copyButton {
+  width: 100%;
+}

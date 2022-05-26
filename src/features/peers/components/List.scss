@@ -1,0 +1,12 @@
+.main {
+  th, td {
+    padding: 0 20px;
+    &:first-child {
+      width: 33%;
+    }
+
+    &:last-child {
+      width: 100px;
+    }
+  }
+}

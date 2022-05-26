@@ -1,0 +1,100 @@
+.border {
+  padding-top: $gutter-size;
+  border-top: 1px solid $border-inverse-color;
+  margin-top: $gutter-size;
+}
+
+// .main {
+//   a {
+//     display: block;
+//     padding: 5px 0;
+//     color: $highlight-inverse-color;
+//     font-size: $font-size-nav;
+//   }
+
+//   .active,
+//   .active:hover,
+//   .active:focus {
+//     color: #444B57;
+//     background: #fff;
+//   }
+
+//   a:hover,
+//   a:focus {
+//     text-decoration: none;
+//     color: lighten($highlight-inverse-color, 15%);
+//   }
+// }
+
+.langBtn {
+  width: 80px !important;
+  height: 30px;
+}
+
+.smallFont {
+  font-size: 12px;
+  & > a {
+    font-size: 12px;
+  }
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0 24px;
+
+  a {
+    display: block;
+    padding: 0 18px;
+    height: 48px;
+    line-height: 48px;
+    color: #78808D;
+    font-size: 18px;
+    border-radius: 8px;
+
+    &.active {
+      background: #fff;
+      font-weight: 500;
+      color: #444B57;
+    }
+  }
+  img {
+    margin-right: 18px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.activeIcon {
+  display: none;
+  color: #78808D;
+}
+
+.active .activeIcon {
+  display: inline;
+}
+
+.active .icon {
+  display: none;
+}
+
+// .iconWrapper {
+//   img {
+//     margin-right: 18px;
+//     width: 20px;
+//     height: 20px;
+//   }
+// }
+
+.warningIcon {
+  height: 10px;
+  padding-right: 5px;
+}
+
+.updateWarning{
+  background-color:  transparentize($highlight-inverse-color, 0.9);
+  padding: 10px $gutter-size/4;
+  color: white;
+  margin: $gutter-size/2 $gutter-size 0px;
+  border-radius: 3px;
+}

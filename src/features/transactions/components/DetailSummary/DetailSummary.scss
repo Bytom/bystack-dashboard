@@ -1,0 +1,138 @@
+.main {
+  background: $background-color;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #E1E3E6;
+
+  .row {
+    display: flex;
+    border-bottom: 1px solid $border-light-color;
+  }
+  .col {
+    padding-right: 10px;
+  }
+
+  .row:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    .rawId {
+      color: $highlight-default;
+    }
+
+    &:hover .rawId {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.colAction {
+  text-transform: uppercase;
+  margin-right: 120px;
+  width: 360px;
+  min-width: 360px;
+  
+  img {
+    width: 20px;
+    margin-bottom: 4px;
+    margin-right: 6px;
+  }
+}
+
+.colAction, .colAmount {
+  color: #78808D;
+  font-size: 16px;
+}
+
+.colAmount {
+  white-space: nowrap;
+}
+
+.colAction{
+  width: 22%;
+  flex-grow: 1;
+}
+
+.account{
+  display: flex;
+  flex: 1;
+}
+
+.middle{
+  width: 50%;
+  display: flex;
+  flex-grow: 2;
+}
+
+.end{
+  width: 28%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.amount {
+  background: none;
+  font-size: 16px;
+}
+
+.emphasisLabel{
+  font-size: 16px;
+  color: #444B57;
+}
+
+.colLabel {
+  color: #78808D;
+  text-align: right;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.colUnit {
+  text-align: right;
+  white-space: nowrap;
+
+  > a{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+}
+
+.immature {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: lowercase;
+  margin-left: 12px;
+  width: 87px;
+  height: 32px;
+  background: #FEF0F0;
+  border-radius: 8px;
+  color: #F43C3C;
+}
+
+.rawId {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.recievedAmount {
+  text-align: right;
+}
+
+@media (max-width: 1440px) {
+  .colAction {
+    min-width: 100px;
+    width: 100px;
+    margin-right: 10px;
+  } 
+}
